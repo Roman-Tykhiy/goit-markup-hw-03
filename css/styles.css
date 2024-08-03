@@ -9,9 +9,53 @@ a {
 }
 ul, ol {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 address {
     font-style: normal;
+}
+h1,h2,h3,h4,h5,h6,p {
+        margin: 0;
+}
+.container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+}
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+/* Header */
+.header_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.header_nav {
+        display: flex;
+        align-items: center;
+        gap: 103px;
+}
+.heder_nav_list {
+        display: flex;
+        gap: 40px;
+
+}
+.adress_list {
+        display: flex;
+        gap: 40px;
 }
 .header_logotyp {
         font-family: "Raleway", sans-serif;
@@ -26,12 +70,16 @@ address {
     color: #2e2f42;
 }
 .heder_nav_link {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: block;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
 }
 .heder_nav_link:hover {
         color: #404bbf
@@ -54,9 +102,15 @@ address {
 .heder_addres_link:focus {
         color: #404bbf;
 }
+/* header end */
+
+/* sektion_1 */
 .hero_page {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
+
 .hero_title {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -75,12 +129,21 @@ address {
         letter-spacing: 0.04em;
         color: #fff;
         cursor: pointer;
+        margin-top: 48px;
+        border-radius: 4px;
+        width: 169px;
+        height: 56px;
 }
 .hero_button:hover {
     background: #404bbf;
 }
 .hero_button:focus {
         background: #404bbf;
+}
+/* section_2 */
+.advantages {
+        padding-top: 120px;
+        padding-bottom: 120px;
 }
 .advantages-title_itam {
         font-family: "Roboto", sans-serif;
@@ -89,6 +152,7 @@ address {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 .advantages_text {
         font-family: "Roboto", sans-serif;
@@ -98,9 +162,27 @@ address {
         letter-spacing: 0.02em;
         color: #434455;
 }
+.advantages-list {
+        display: flex;
+        gap: 24px;  
+}
+.advantages-itam {
+        width: 264px;
+}
+/* section_2_end */
+/* section_3_end */
 .our_teams {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.our_teams_list {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+}
+
 .our_teams_title {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -109,7 +191,8 @@ address {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        text-transform: capitalize
+        text-transform: capitalize;
+        margin-bottom: 72px;
 }
 .our_teams_title_item {
         font-family: "Roboto", sans-serif;
@@ -122,6 +205,8 @@ address {
 }
 .our_teams_itam {
         background-color: #fff;
+        width: 264px;
+        height: 380px;
 }
 .our_teams_text {
         font-family: "Roboto", sans-serif;
@@ -132,6 +217,15 @@ address {
         text-align: center;
         color: #434455;
 }
+.our_portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+.our_portfolio_list{
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+}
 .our_portfolio_title {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -140,7 +234,12 @@ address {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        text-transform: capitalize
+        text-transform: capitalize;
+        margin-bottom: 72px;
+}
+.our_portfolio_itam {
+        width: 360px;
+        height: 420px;
 }
 .our_portfolio_title_itam {
         font-family: "Roboto", sans-serif;
@@ -161,6 +260,10 @@ address {
 .footer {
     background: #2e2f42;
 }
+.container_footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+}
 .footer_logotyp {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
@@ -169,6 +272,7 @@ address {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-bottom: 16px;
 }
 .footer_logotyp .footer_logo-part {
         color: #f4f4fd;
@@ -180,4 +284,6 @@ address {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        width: 264px;
+        height: 72px;
 }

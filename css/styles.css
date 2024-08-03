@@ -110,6 +110,11 @@ h1,h2,h3,h4,h5,h6,p {
     padding-top: 188px;
     padding-bottom: 188px;
 }
+.container_hero_page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 
 .hero_title {
         font-family: "Roboto", sans-serif;

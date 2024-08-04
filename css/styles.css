@@ -289,9 +289,7 @@ img {
         color: #434455;
 }
 .footer {
-    background: #2e2f42;
-}
-.container_footer {
+        background: #2e2f42;
         padding-top: 100px;
         padding-bottom: 100px;
 }
@@ -304,6 +302,7 @@ img {
         text-transform: uppercase;
         color: #4d5ae5;
         margin-bottom: 16px;
+        display: inline-block;
 }
 .footer_logotyp .footer_logo-part {
         color: #f4f4fd;
